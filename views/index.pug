@@ -6,16 +6,17 @@ block content
   button(type="submit", class="btn btn-info", onclick="doBump()") Press Me
   div(id="bump") Bump the Count
 
-script.
-    var count = 0;
-    var bump = 1;
-         function doBump() {
+
+
+  script.
+      var count = 0;
+      var bump = 1;
+        function doBump() {
           count = count+bump;
-          bump=bump+1;
+          bump= bump+1;
           var divBump = document.getElementById('bump')
-          divBump.innerHtml = `Count ${count} with bump ${bump}`;
-         }
+          divBump.innerHTML = `Count ${count} with bump ${bump}`;
+        }
 
-a(href='/tablet') Tablet Search  
-
-
+     
+  a(href='/tablet') Tablet Search
